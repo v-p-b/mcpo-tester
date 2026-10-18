@@ -236,7 +236,7 @@ class McpoClient:
             response = self.http.request(
                 tool.method,
                 url,
-                json=body if body else None,
+                json=body if body else {},
                 params=params or None,
                 headers={"Content-Type": "application/json"},
             )
